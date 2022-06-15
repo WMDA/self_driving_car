@@ -13,16 +13,16 @@ class Controls{
             switch(event.key){
                 case "ArrowLeft":
                     this.left = true;
-                    break
+                    break;
                 case "ArrowRight":
                     this.right = true;
-                    break
+                    break;
                 case "ArrowUp":
-                    this.left = true;
-                    break
+                    this.forward = true;
+                    break;
                 case "ArrowDown":
-                    this.right = true;
-                    break
+                    this.reverse = true;
+                    break;
 
             }
             console.table(this);
@@ -31,18 +31,19 @@ class Controls{
             switch(event.key){
                 case "ArrowLeft":
                     this.left = false;
-                    break
+                    break;
                 case "ArrowRight":
                     this.right = false;
-                    break
+                    break;
                 case "ArrowUp":
-                    this.left = false;
-                    break
+                    this.forward = false;
+                    break;
                 case "ArrowDown":
-                    this.right = false;
-                    break
+                    this.reverse = false;
+                    break;
 
             }
+            console.table(this);
             
         }    
         
